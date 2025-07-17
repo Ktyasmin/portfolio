@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #070506;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 3000px;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    color: rgb(248, 247, 245);
+    font-size: 35px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Menu Styling */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(251, 246, 246);
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color:rgb(244, 151, 225);
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 60px 60px; /* Top padding increased for fixed navbar */
+}
+
+/* Intro Text */
+.intro-text p {
+    font-size: 50px;
+    color:rgb(246, 137, 224);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* Profile Picture */
+.profile-pic img {
+    width: 410px;
+    height: 410PX;
+    border-radius: 50%;
+    margin-left: 200px;
+}
+
+
+.intro-text .btn-box{
+    display: flex;
+    justify-content:space-between ;
+   width: 345px; 
+   height: 50px;
+   
+
+}
+
+.btn-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(252, 103, 222);
+    border: 2px solid rgb(252, 103, 222);
+    border-radius: 8px;
+    font-size: 19px;
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+}
+
+.btn-box a:nth-child(2) {
+    background:transparent ;
+}
+
+.btn-box a:nth-child(1) {
+    background:transparent ;
+
+}
+
+.btn-box a:hover{
+    color: rgb(239, 115, 136);
+}
+
+.section h2{
+    color: rgb(252, 103, 222);
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.section p{
+    font-size: 19px;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 30px;
+    margin-left: 50px;
+
+
+
+}
+
+
+
+/* EDUCATION */
+
+/* Education Section Styling */
+
+.education-section {
+  padding: 40px 40px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.education-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: rgb(252, 103, 222);
+}
+
+/* Row container to align cards in one line */
+.education-row {
+  display: flex;
+  justify-content: space-between;  /* or center/gap-based */
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures cards wrap on small screens */
+}
+
+/* Individual card */
+.education-card {
+  flex: 1 1 250px; /* grow, shrink, base width */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 300px;
+}
+
+.education-card h3 {
+  margin: 0 0 10px;
+  color: #004080;
+  font-size: 1.2rem;
+}
+
+.education-card p {
+  color: #555;
+  margin: 5px 0;
+}
+
+
+
+
+#SKILLS {
+  padding: 40px;
+
+}
+
+#SKILLS h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color:rgb(252, 103, 222);
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  font-size: 20px;
+  color: WHITE;
+  
+
+}
+
+.skill-category p {
+  color:white;
+  margin-left: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+#contact {
+  padding: 40px;
+  text-align: left;
+}
+
+#contact h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:rgb(252, 103, 222) ;
+}
+
+#contact p {
+  font-size: 16px;
+  margin: 10px 0;
+  color:white;
+}
+
+#contact i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: rgb(252, 103, 222);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Fullscreen Intro */
+.intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color:black;
+  color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 2s ease 2.5s forwards;
+}
+
+.intro-name {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  animation: scaleIn 1.5s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+

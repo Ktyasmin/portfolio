@@ -9,7 +9,7 @@
 body {
     background-color: #070506;
     font-family: Arial, Helvetica, sans-serif;
-    height: 3000px;
+    height: 2000px;
 }
 
 /* Navbar Styling */
@@ -75,6 +75,7 @@ body {
     height: 410PX;
     border-radius: 50%;
     margin-left: 200px;
+  
 }
 
 
@@ -164,7 +165,7 @@ body {
 /* Individual card */
 .education-card {
   flex: 1 1 250px; /* grow, shrink, base width */
-  background-color: #fff;
+  background-color:rgb(251, 145, 163);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -173,51 +174,117 @@ body {
 
 .education-card h3 {
   margin: 0 0 10px;
-  color: #004080;
+  color: #000407;
   font-size: 1.2rem;
 }
 
 .education-card p {
-  color: #555;
+  color:white;
   margin: 5px 0;
 }
 
-
-
-
-#SKILLS {
-  padding: 40px;
-
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
-#SKILLS h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color:rgb(252, 103, 222);
-}
 
-.skill-category {
-  margin-bottom: 20px;
-}
 
-.skill-category h3 {
-  font-size: 20px;
-  color: WHITE;
+
+.skills-section {
+  padding: 60px 20px;
   
-
 }
 
-.skill-category p {
-  color:white;
-  margin-left: 0px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+ .section-title {
+  text-align: center;
+  /* margin-bottom: 40px;
+  font-weight: 200;
+  position: relative;
+  font-size: 2rem;
+  font-size: 2rem; */
+  color: rgb(252, 103, 222); 
+  margin-bottom:30px;
+  font-size: 2rem;
+
+
+
+  
+ } 
+
+ .section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+ /* Blue underline */
+  margin: 10px auto 0;
+  border-radius: 2px;
+} 
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Skill Card */
+.skill-card {
+  background-color:rgb(251, 145, 163);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+ Card Titles */
+ .skill-card h3 {
+  font-size: 1.4rem;
+  color: #030509;
+  margin-bottom: 10px;
+  font-weight: 600;
+} 
+
+/* Card Text */
+.skill-card p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+}
+
+/* Responsive Typography */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-card p {
+    font-size: 0.95rem;
+  }
 }
 
 
 
 
 
-#contact {
+
+/* #contact {
   padding: 40px;
   text-align: left;
 }
@@ -248,8 +315,69 @@ body {
   text-decoration: underline;
   color: rgb(252, 103, 222);
 }
+ */
 
 
+
+
+/* Contact Section */
+.contact {
+  
+  padding: 80px 20px;
+  text-align: center;
+  
+}
+
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fa7cb7;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contact h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Paragraph and Icon Styling */
+.contact p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  color: #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact i {
+  font-size: 1.2rem;
+  color: #f9f9fa;
+}
+
+/* Link Styling */
+.contact a {
+  color: #86a3f3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  color: #fb63f6;
+  text-decoration: underline;
+}
+
+
+ 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 /* Fullscreen Intro */

@@ -212,7 +212,7 @@ body {
   position: relative;
   font-size: 2rem;
   font-size: 2rem; */
-  color: rgb(252, 103, 222); 
+  color:  rgb(252, 103, 222);
   margin-bottom:30px;
   font-size: 2rem;
 
@@ -252,12 +252,12 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
- Card Titles */
+ 
  .skill-card h3 {
-  font-size: 1.4rem;
-  color: #030509;
+  font-size: 1.3rem;
+  color: #04080f;
   margin-bottom: 10px;
-  font-weight: 600;
+  
 } 
 
 /* Card Text */
